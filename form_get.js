@@ -33,12 +33,11 @@ function get() {
                     break;
                 }
             }
-            var returnvalue = [];
-            for (let i =0;i<arrindex;i+=1) {
+            var returnvalue = {};
+            for (let i = 0; i<arrindex;i+=1) {
                 var key = keyarr[i];
-                var value = valuearr[i]
-                returnvalue[i] = {}
-                returnvalue[i]  [key+''] = value;
+                var value = valuearr[i];
+                returnvalue[key+''] = value;
             }
             return returnvalue;
         } else {
